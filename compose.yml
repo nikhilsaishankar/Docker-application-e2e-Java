@@ -3,7 +3,7 @@ services:
   devopsdb:
     image: nikhilkotharu/dockerapp:db
     ports:
-      - "4560:3306"
+      - "3306:3306"
     deploy:
       replicas: 3
     networks:
