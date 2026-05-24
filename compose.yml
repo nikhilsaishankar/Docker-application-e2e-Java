@@ -4,10 +4,10 @@ services:
     image: nikhilkotharu/dockerapp:db
     ports:
       - "3306:3306"
-    restart-policy:
-      - condition: always
     deploy:
       replicas: 3
+      restart_policy:
+        condition: any    
       resources:
         limits:
           cpus: '0.5'
@@ -24,10 +24,10 @@ services:
     image: nikhilkotharu/dockerapp:web
     ports:
       - "7777:8080"
-    restart-policy:
-      - condition: always  
     deploy:
       replicas: 3
+      restart_policy:
+        condition: any    
       resources:
         limits:
           cpus: '0.5'
