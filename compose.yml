@@ -21,7 +21,7 @@ services:
   application:
     image: nikhilkotharu/dockerapp:web
     ports:
-      - "4444:8080"
+      - "5555:8080"
     deploy:
       replicas: 3
     depends_on:
