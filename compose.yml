@@ -9,10 +9,10 @@ services:
       resources:
         limits:
           cpus: '1.0'
-          memory: '128m'
+          memory: '1024m'
         reservations:
           cpus: '0.5'
-          memory: '100m'
+          memory: '512m'
     networks:
       - mynetwork
     volumes:
@@ -27,10 +27,10 @@ services:
       resources:
         limits:
           cpus: '1.0'
-          memory: '128m'
+          memory: '1024m'
         reservations:
           cpus: '0.5'
-          memory: '100m'
+          memory: '512m'
     depends_on:
       - devopsdb
     networks:
